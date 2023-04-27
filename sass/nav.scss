@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #333;
+    border: none;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-nav {
+    margin: 0;
+    justify-content: flex-end;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease-in-out;
+  
+    &:hover,
+    &:focus {
+      border-bottom-color: #fff;
+    }
+  
+    &.active {
+      border-bottom-color: #fff;
+    }
+  }
