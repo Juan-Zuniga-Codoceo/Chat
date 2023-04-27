@@ -1,6 +1,22 @@
-/*@import "~bootstrap/scss/bootstrap";
-@import "./nav.scss";
-@import "./body.scss";*/
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+// Global styles
 * {
   box-sizing: border-box;
 }
@@ -13,11 +29,12 @@ body {
 }
 
 a {
-  color: #007bff;
+  color: $primary-color;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .btn {
@@ -30,10 +47,11 @@ a:hover {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-}
-.btn:hover {
-  background-color: #6c757d;
-  color: #fff;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
 }
 
 .card {
@@ -52,10 +70,11 @@ a:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
   transition: border-color 0.2s ease-in-out;
-}
-.form-control:focus {
-  outline: none;
-  border-color: #007bff;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
 }
 
 .text-center {
@@ -75,28 +94,33 @@ a:hover {
 }
 
 .text-primary {
-  color: #007bff;
+  color: $primary-color;
 }
 
 .text-secondary {
-  color: #6c757d;
+  color: $secondary-color;
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: $primary-color;
   color: #fff;
-}
-.btn-primary:hover {
-  background-color: #0062cc;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
 
 .btn-secondary {
-  background-color: #6c757d;
+  background-color: $secondary-color;
   color: #fff;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
 }
-.btn-secondary:hover {
-  background-color: #545b62;
-}
+
+$primary-color: #0084ff;
+$secondary-color: #eeeeee;
 
 .chat-container {
   display: flex;
@@ -123,26 +147,26 @@ a:hover {
 
 .chat-bubble-right {
   align-self: flex-end;
-  background-color: #0084ff;
+  background-color: $primary-color;
   color: #ffffff;
 }
 
 .chat-bubble-left {
   align-self: flex-start;
-  background-color: #eeeeee;
+  background-color: $secondary-color;
 }
 
 .chat-input {
   display: flex;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: $secondary-color;
   padding: 10px;
 }
 
 .chat-input input {
   flex-grow: 1;
   border: none;
-  background-color: #eeeeee;
+  background-color: $secondary-color;
   font-size: 16px;
   padding: 10px;
   border-radius: 20px;
@@ -150,7 +174,7 @@ a:hover {
 }
 
 .chat-input button {
-  background-color: #0084ff;
+  background-color: $primary-color;
   color: #ffffff;
   border: none;
   border-radius: 20px;
@@ -160,19 +184,19 @@ a:hover {
 }
 
 .conversation-header {
-  display: flex;
-  align-items: center; /* centra verticalmente los elementos */
-}
+    display: flex;
+    align-items: center; /* centra verticalmente los elementos */
+  }
+  
+  .conversation-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* para hacer la imagen redonda */
+    margin-right: 10px; /* agrega un espacio entre la imagen y el texto */
+  }
 
-.conversation-header img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; /* para hacer la imagen redonda */
-  margin-right: 10px; /* agrega un espacio entre la imagen y el texto */
-}
-
-ul.dropdown-menu {
-  z-index: 999;
-}
-
-/*# sourceMappingURL=style.css.map */
+  ul.dropdown-menu {
+    z-index: 999;
+  }
+  
+  
