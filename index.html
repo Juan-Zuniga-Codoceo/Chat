@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chat - Mobile First</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-qZBmfC+GnWjJ8VmzYKLmiy1jn3Hebx3W45UrurMkTpIKZcP+ZrBLrW46bftDwQGyfuy7AFJoQiDpN8cKjJlVTQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -55,46 +56,62 @@
 		<div class="row">
 			<div class="col-md-4">
 				<!-- Aquí iría el código para la lista de conversaciones -->
-                <div class="conversation-list">
+                <div class=" conversation-list">
                     <div class="search-bar">
                         <!-- Aquí iría el código para el buscador de conversaciones -->
                         <form>
                             <input type="text" class="form-control" placeholder="Buscar conversación...">
                         </form>
                     </div>
-                    <ul class="list-unstyled">
-                        <li class="conversation">
-                            <div class="conversation-avatar">
-                                <img src="img/avatar1.jpg" alt="Avatar">
-                            </div>
-                            <div class="conversation-info">
-                                <h2 class="conversation-title">Nombre del contacto</h2>
-                                <p class="conversation-message">Último mensaje de la conversación</p>
-                                <span class="conversation-time">10:30 AM</span>
-                            </div>
-                            <div class="conversation-actions">
-                                <span class="conversation-unread">1</span>
-                            </div>
+                    <br>
+                    <ul class="conversation-list">
+                        <li class="conversation-item">
+                          <img src="./images/bulma.jpg" alt="Avatar" class="avatar">
+                          <div class="conversation-info">
+                            <h3 class="conversation-title">Bulma</h3>
+                            <p class="conversation-message">ke paho!</p>
+                            <p class="message-time">Hoy, 12:30 AM</p>
+                          </div>
                         </li>
-                        <li class="conversation">
-                            <div class="conversation-avatar">
-                                <img src="img/avatar2.jpg" alt="Avatar">
-                            </div>
+                        <!-- más elementos li de conversaciones -->
+                        <li class="conversation-item">
+                            <img src="./images/vegeta.jpg" alt="Avatar" class="avatar">
                             <div class="conversation-info">
-                                <h2 class="conversation-title">Nombre del contacto</h2>
-                                <p class="conversation-message">Último mensaje de la conversación</p>
-                                <span class="conversation-time">9:15 AM</span>
+                              <h3 class="conversation-title">Vegeta</h3>
+                              <p class="conversation-message">Insecto! igual me comeria sus tocomples</p>
+                              <p class="message-time">Hoy, 12:33 AM</p>
                             </div>
-                            <div class="conversation-actions">
-                                <span class="conversation-unread">2</span>
+                          </li>
+                          <li class="conversation-item unread">
+                            <img src="./images/krillin.jpg" alt="Avatar" class="avatar">
+                            <div class="conversation-info">
+                              <h3 class="conversation-title">Krillin</h3>
+                              <p class="conversation-message">Gooooku!, sacate unas chelas</p>
+                              <p class="message-time">26-04-23, 10:30 AM</p>
                             </div>
-                        </li>
-                        <!-- Agregar más elementos aquí -->
-                    </ul>
+                          </li>
+                          <li class="conversation-item unread">
+                            <img src="./images/maestro roshio.jpg" alt="Avatar" class="avatar">
+                            <div class="conversation-info">
+                              <h3 class="conversation-title">Maestro Roshi</h3>
+                              <p class="conversation-message">Mi rey hay que entrenar, dios lo bendiga</p>
+                              <p class="message-time">Hoy, 05:30 AM</p>
+                            </div>
+                          </li>
+                          <li class="conversation-item">
+                            <img src="./images/trunks.jpg" alt="Avatar" class="avatar">
+                            <div class="conversation-info">
+                              <h3 class="conversation-title">Trunks</h3>
+                              <p class="conversation-message">Aloha</p>
+                              <p class="message-time">15-04-23, 19:15 AM</p>
+                            </div>
+                          </li>
+                      </ul>
+                 
                 </div>
                 
 			</div>
-			<div class="col-md-8 conversation">
+			<div class="col-md-8 conversation chat-container">
                 <!-- Aquí iría el código para la conversación actual -->
                 <div class="conversation-header">
                     <img src="./images/goku.jpg" alt="Goku">
@@ -103,10 +120,10 @@
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Imagen</a></li>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Documento</a></li>
-                    </ul>
+                        <li><a href="#"><i class="fas fa-image"></i></a></li>
+                        <li><a href="#"><i class="fas fa-video"></i></a></li>
+                        <li><a href="#"><i class="fas fa-file"></i></a></li>
+                      </ul>
                 </div>
                   
                 
@@ -115,34 +132,53 @@
                     <!-- Aquí van los mensajes de la conversación -->
                     <div class="chat-bubbles">
                         <div class="chat-bubble chat-bubble-right">
-                          <p>Hola, ¿cómo estás?</p>
+                          <p>Wena, ¿cómo te baila?</p>
                         </div>
                         <div class="chat-bubble chat-bubble-left">
-                          <p></p>¡Estoy bien! ¿Y tú?</p>
+                          <p></p>¡Pulento! ¿Y a ti?</p>
                         </div>
                         <div class="chat-bubble chat-bubble-right">
-                          <p>Genial, gracias por preguntar.</p>
+                          <p>De pana, gracias por preguntar.</p>
                         </div>
+                        <div class="chat-bubble chat-bubble-right">
+                            <p>Vamos de putas mi rey?</p>
+                          </div>
+                          <div class="chat-bubble chat-bubble-left">
+                            <p>Compa, no hay plata, dejame vender la nube voladora y te aviso, siuuuuu.</p>
+                          </div>
                       </div>
     
                 </div>
                 <div class="conversation-footer">
-                    <form>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3" placeholder="Escribe un mensaje"></textarea>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Escribe un mensaje...">
+                        <button>Enviar</button>
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-paperclip"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fas fa-image"></i></a></li>
+                            <li><a href="#"><i class="fas fa-video"></i></a></li>
+                            <li><a href="#"><i class="fas fa-file"></i></a></li>
+                          </ul>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                        <button class="btn btn-default">
-                            <span class="glyphicon glyphicon-picture"></span>
-                        </button>
-                        <button class="btn btn-default">
-                            <span class="glyphicon glyphicon-film"></span>
-                        </button>
-                        <button class="btn btn-default">
-                            <span class="glyphicon glyphicon-paperclip"></span>
-                        </button>
-                    </form>
+                      </div>     
                 </div>
+                
+                <!--
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Escribe un mensaje...">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adjuntar</button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Imagen</a></li>
+                          <li><a href="#">Video</a></li>
+                          <li><a href="#">Documento</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>-->
             </div>
         </div>
 		</div>
