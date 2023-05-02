@@ -12,74 +12,40 @@
   
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg my-navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="ruta-del-archivo-del-logo" alt="Logo">
-      </a>      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(227, 242, 253, 0.8);">
+    <a class="navbar-brand" href="#">
+        <img src="./images/chat-3-svgrepo-com.svg" alt="Bootstrap" width="50" height="44">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link my-nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link my-nav-link" href="#">Configuración</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link my-nav-link" href="#">Ayuda</a>
-          </li>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <img src="./images/home-svgrepo-com.svg" alt="Bootstrap" width="40" height="34">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./images/settings-svgrepo-com.svg" alt="Bootstrap" width="40" height="34">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./images/lamp-light-svgrepo-com.svg" alt="Bootstrap" width="40" height="34">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./images/logout-svgrepo-com.svg" alt="Bootstrap" width="40" height="34">
+                </a>
+            </li>
         </ul>
-      </div>
     </div>
-  </nav>
-  
+</nav>
+
   <br>
-  <br>
-		<!-- Aquí iría el código para la barra de navegación 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Chat - Mobile First</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <br>
-        <br>
-       <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Chat App</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Conversations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Settings</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>-->
           
 	<main class="container conversation-container.current">
 		<div class="row">
@@ -98,7 +64,7 @@
                           <img src="./images/bulma.jpg" alt="Avatar" class="avatar">
                           <div class="conversation-info">
                             <h3 class="conversation-title">Bulma</h3>
-                            <p class="conversation-message">ke paho!</p>
+                            <p class="conversation-message">Hola!</p>
                             <p class="message-time">Hoy, 12:30 AM</p>
                           </div>
                         </li>
@@ -107,7 +73,7 @@
                             <img src="./images/vegeta.jpg" alt="Avatar" class="avatar">
                             <div class="conversation-info">
                               <h3 class="conversation-title">Vegeta</h3>
-                              <p class="conversation-message">Insecto! igual me comeria sus tocomples</p>
+                              <p class="conversation-message">Insecto!</p>
                               <p class="message-time">Hoy, 12:33 AM</p>
                             </div>
                           </li>
@@ -115,7 +81,7 @@
                             <img src="./images/krillin.jpg" alt="Avatar" class="avatar">
                             <div class="conversation-info">
                               <h3 class="conversation-title">Krillin</h3>
-                              <p class="conversation-message">Gooooku!, sacate unas chelas</p>
+                              <p class="conversation-message">Gooooku!</p>
                               <p class="message-time">26-04-23, 10:30 AM</p>
                             </div>
                           </li>
@@ -152,19 +118,19 @@
                     <!-- Aquí van los mensajes de la conversación -->
                     <div class="chat-bubbles">
                         <div class="chat-bubble chat-bubble-right">
-                          <p>Wena, ¿cómo te baila?</p>
+                          <p>Hola, ¿cómo estas?</p>
                         </div>
                         <div class="chat-bubble chat-bubble-left">
-                          <p></p>¡Pulento! ¿Y a ti?</p>
+                          <p></p>¡Bien! ¿Y tu?</p>
                         </div>
                         <div class="chat-bubble chat-bubble-right">
-                          <p>De pana, gracias por preguntar.</p>
+                          <p>Bien, gracias por preguntar.</p>
                         </div>
                         <div class="chat-bubble chat-bubble-right">
-                            <p>Vamos de putas mi rey?</p>
+                            <p>¿Como va el entrenamiento?</p>
                           </div>
                           <div class="chat-bubble chat-bubble-left">
-                            <p>Compa, no hay plata, dejame vender la nube voladora y te aviso, siuuuuu.</p>
+                            <p>Pesado pero avanzando.</p>
                           </div>
                       </div>
     

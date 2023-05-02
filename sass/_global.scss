@@ -342,16 +342,3 @@ $secondary-color: #eeeeee;
   .conversation-container.current {
     height: calc(100vh - 100px);
   }
-  
-  .my-navbar {
-    background-color: #f8f9fa; /* Cambia el color de fondo del navbar */
-  }
-  
-  .my-navbar-brand, .my-nav-link {
-    color: #000000; /* Cambia el color del texto del navbar */
-  }
-  
-  .my-navbar-brand:hover, .my-nav-link:hover {
-    color: #ffffff; /* Cambia el color del texto del navbar al hacer hover */
-  }
-  
