@@ -163,7 +163,7 @@ $secondary-color: #eeeeee;
   padding: 10px;
 }
 
-.chat-input input {
+/*.chat-input input {
   flex-grow: 1;
   border: none;
   background-color: $secondary-color;
@@ -171,9 +171,18 @@ $secondary-color: #eeeeee;
   padding: 10px;
   border-radius: 20px;
   margin-right: 10px;
+}*/
+.chat-input input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparencia del fondo */
+  margin-right: 10px;
 }
 
-.chat-input button {
+
+/*.chat-input button {
   background-color: $primary-color;
   color: #ffffff;
   border: none;
@@ -181,6 +190,20 @@ $secondary-color: #eeeeee;
   font-size: 16px;
   padding: 10px 20px;
   cursor: pointer;
+}*/
+
+.chat-input button {
+  border: none;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #eee;
 }
 
 .conversation-header {
@@ -198,7 +221,11 @@ $secondary-color: #eeeeee;
   ul.dropdown-menu {
     z-index: 999;
   }
-
+  conversation-footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+  }
   .conversation-footer .input-group-append {
     position: absolute;
     top: 0;
@@ -206,9 +233,45 @@ $secondary-color: #eeeeee;
     z-index: 1;
   }
   
-  .dropdown-menu {
+ /* .dropdown-menu {
     right: 0;
     left: auto;
+  }*/
+
+  .dropdown {
+    margin-left: 10px;
+  }
+  
+  .dropdown-toggle {
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #eee;
+  }
+  
+  .dropdown-menu {
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li a {
+    color: #666;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #333;
   }
 
   .conversation-list {
@@ -262,3 +325,33 @@ $secondary-color: #eeeeee;
   img:hover{
     transform: scale(1.4);
   }
+
+  body {
+    background-image: url('../images/FONDO6agua62.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .conversation{
+    background-color: #f7f7f7;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .conversation-container.current {
+    height: calc(100vh - 100px);
+  }
+  
+  .my-navbar {
+    background-color: #f8f9fa; /* Cambia el color de fondo del navbar */
+  }
+  
+  .my-navbar-brand, .my-nav-link {
+    color: #000000; /* Cambia el color del texto del navbar */
+  }
+  
+  .my-navbar-brand:hover, .my-nav-link:hover {
+    color: #ffffff; /* Cambia el color del texto del navbar al hacer hover */
+  }
+  

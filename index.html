@@ -4,13 +4,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chat - Mobile First</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-qZBmfC+GnWjJ8VmzYKLmiy1jn3Hebx3W45UrurMkTpIKZcP+ZrBLrW46bftDwQGyfuy7AFJoQiDpN8cKjJlVTQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-h79tIQsNlTdpTt29vdTJwpi/03h+mT3rZ3JVr1Mh03OR+XO9VLjrOyPfoDx/vw+W1hMNWXIn2nZtMk2hKsogtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg my-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="ruta-del-archivo-del-logo" alt="Logo">
+      </a>      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link my-nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-link" href="#">Configuración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-nav-link" href="#">Ayuda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <br>
+  <br>
 		<!-- Aquí iría el código para la barra de navegación 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
@@ -29,8 +56,10 @@
                     </ul>
                 </div>
             </div>
-        </nav> -->
-        <nav class="navbar navbar-expand-lg">
+        </nav>
+        <br>
+        <br>
+       <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Chat App</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,13 +79,13 @@
                 </ul>
               </div>
             </div>
-          </nav>
+          </nav>-->
           
-	<main class="container">
+	<main class="container conversation-container.current">
 		<div class="row">
 			<div class="col-md-4">
 				<!-- Aquí iría el código para la lista de conversaciones -->
-                <div class=" conversation-list">
+                <div class=" conversation-list conversation">
                     <div class="search-bar">
                         <!-- Aquí iría el código para el buscador de conversaciones -->
                         <form>
@@ -107,23 +136,14 @@
                             </div>
                           </li>
                       </ul>
-                 
                 </div>
                 
 			</div>
-			<div class="col-md-8 conversation chat-container">
+			<div class="col-md-8 conversation chat-container conversation">
                 <!-- Aquí iría el código para la conversación actual -->
                 <div class="conversation-header">
                     <img src="./images/goku.jpg" alt="Goku">
                     <h3>Goku</h3>
-                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-menu-hamburger"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><i class="fas fa-image"></i></a></li>
-                        <li><a href="#"><i class="fas fa-video"></i></a></li>
-                        <li><a href="#"><i class="fas fa-file"></i></a></li>
-                      </ul>
                 </div>
                   
                 
@@ -165,25 +185,9 @@
                         </div>
                       </div>     
                 </div>
-                
-                <!--
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Escribe un mensaje...">
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Adjuntar</button>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Imagen</a></li>
-                          <li><a href="#">Video</a></li>
-                          <li><a href="#">Documento</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                </div>-->
             </div>
         </div>
 		</div>
 	</main>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
 </body>
 </html>
